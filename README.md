@@ -11,4 +11,4 @@ Run the Python script:bashCopy codepython personal_assistant.py
 Follow the on-screen instructions to interact with the Personal Assistant.
 When prompted, choose an option from the menu by entering the corresponding number.
 Follow the prompts to input information such as contact details or search criteria.
-Contacts and notes will be stored in JSON files (contacts.json and notes.json) in the same directory as the script
+Contacts and notes will be stored in JSON files (contacts.json and notes.json) in the same directory as the script.
