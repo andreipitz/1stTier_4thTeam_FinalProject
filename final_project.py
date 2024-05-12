@@ -4,27 +4,23 @@ from datetime import datetime, timedelta
 
 # File paths for storing contacts and notes
 CONTACTS_FILE = "contacts.json"
-NOTES_FILE = "notes.json"
+
 
 # Initialize contacts and notes dictionaries
 contacts = {}
-notes = {}
+
 
 # Load existing data from files (if any)
 if os.path.exists(CONTACTS_FILE):
     with open(CONTACTS_FILE, "r") as f:
         contacts = json.load(f)
 
-if os.path.exists(NOTES_FILE):
-    with open(NOTES_FILE, "r") as f:
-        notes = json.load(f)
 
 # Function to save contacts and notes to files
 def save_data():
     with open(CONTACTS_FILE, "w") as f:
         json.dump(contacts, f, indent=4)
-    with open(NOTES_FILE, "w") as f:
-        json.dump(notes, f, indent=4)
+
 
 # Function to add a new contact
 def add_contact(name, address, phone, email, birthday):
